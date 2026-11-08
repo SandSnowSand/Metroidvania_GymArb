@@ -1,13 +1,13 @@
 [gd_scene format=3 uid="uid://bfwopua0bnwk3"]
 
-[ext_resource type="PackedScene" uid="uid://b4ait0spdyub7" path="res://Level/Build/ground.tscn" id="1_ksrrr"]
 [ext_resource type="PackedScene" uid="uid://ccwol5wovbxst" path="res://Player/Scenes/Player.tscn" id="2_12hyr"]
+[ext_resource type="PackedScene" uid="uid://b4ait0spdyub7" path="res://Level/Build/ground.tscn" id="3_yfvqm"]
 
 [node name="Level" type="Node2D" unique_id=386171743]
 
-[node name="Ground" parent="." unique_id=2021535378 instance=ExtResource("1_ksrrr")]
-position = Vector2(-785.9999, 603)
-scale = Vector2(33.809593, 1.119335)
-
 [node name="CharacterBody2D" parent="." unique_id=137437511 instance=ExtResource("2_12hyr")]
 position = Vector2(413, 309)
+
+[node name="Ground" parent="." unique_id=2021535378 instance=ExtResource("3_yfvqm")]
+position = Vector2(-79, 650)
+scale = Vector2(20.027485, 0.8736392)
